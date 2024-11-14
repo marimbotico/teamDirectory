@@ -1,0 +1,65 @@
+/* Container for the team directory */
+.team-directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.team-directory h2 {
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #333;
+}
+
+/* Grid layout for team cards */
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Individual team member card */
+.team-member-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for the profile photo */
+.team-member-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Name styling */
+.team-member-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Role and location styling */
+.team-member-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Add padding inside each card */
+.team-member-card div {
+    padding: 10px 15px;
+}
